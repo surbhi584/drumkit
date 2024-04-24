@@ -1,0 +1,64 @@
+html {
+    background-image: url(https://media.istockphoto.com/id/502194815/photo/keeping-rhythm.jpg?s=612x612&w=0&k=20&c=aR0s8sqjIwv9zpKS7yiaustfgrEzGIKA1R9Trh1XXBI=);
+    background-size: cover;
+    background-size: cover;
+    font-size: 10px;
+}
+
+body,
+html {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.keys-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px; /* Adjust the gap between keys */
+    justify-items: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+
+.key {
+    border: .4rem solid rgb(145, 158, 158);
+    border-radius: .1rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem .5rem;
+    text-align: center;
+    transition: all 0.1s ease;
+    width: 10rem;
+    color: white;
+    background-color:rgb(10, 9, 9);
+    /* text-shadow: 0 0 .5rem white; */
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #00ffc6;
+    box-shadow: 0 0 1rem #00ffc6;
+    background-color: #00ffc6;
+}
+
+.sound {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    color: #fbff00;
+}
